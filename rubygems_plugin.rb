@@ -1,6 +1,6 @@
 hook = lambda do |installer|
   if installer.spec.executables.any?
-    system "rbenv", "rehash"
+    system "rbenv", (ENV["RBENV_REHASH_COMMAND"] or "rehash")
   end
 end
 

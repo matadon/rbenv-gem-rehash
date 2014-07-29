@@ -14,6 +14,10 @@ Make sure you have rbenv 0.4.0 or later, then run:
 1. `gem install` a gem that provides executables.
 2. Marvel at how you no longer need to type `rbenv rehash`.
 
+And in this fork:
+
+3. If you're using another plugin like [rbenv-usergems](https://github.com/andyl/rbenv-usergems.git), you can specify a custom rehash command via the environment variable `RBENV_REHASH_COMMAND`
+
 ## How It Works
 
 rbenv-gem-rehash consists of two parts: a RubyGems plugin and an rbenv
